@@ -1,0 +1,16 @@
+name: Deploy
+on:
+  push:
+    branches: ["master"]
+
+jobs:
+  deploy:
+    concurrency: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@main
+      - run: nix develop -c "yarn install; yarn build"
+      - uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
