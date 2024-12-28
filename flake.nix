@@ -16,6 +16,7 @@
             buildInputs = with pkgs; [
               elmPackages.elm
               elmPackages.elm-language-server
+              elmPackages.elm-format
               yarn
               nodejs_23
             ];
