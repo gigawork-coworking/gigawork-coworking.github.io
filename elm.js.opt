@@ -5407,7 +5407,7 @@
                 mn: $dillonkearns$elm_pages$Pages$Url$fromPath($dillonkearns$elm_pages$UrlPath$join(_List_fromArray(["images", "icon-png.png"])))
             },
             kP: $elm$core$Maybe$Nothing,
-            lS: "elm-pages",
+            lS: "GigaWork",
             mg: "GigaWork"
         }));
     };
