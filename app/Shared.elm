@@ -3,6 +3,7 @@ module Shared exposing (Data, Model, Msg(..), SharedMsg(..), template)
 import BackendTask exposing (BackendTask)
 import Effect exposing (Effect)
 import Element exposing (..)
+import Element.Background as Background
 import FatalError exposing (FatalError)
 import Html exposing (Html)
 import Pages.Flags
@@ -92,6 +93,6 @@ view :
     -> View msg
     -> { body : List (Html msg), title : String }
 view sharedData page model toMsg pageView =
-    { body = [ layout [] pageView.body ]
+    { body = [ layout [ Background.color (rgb255 243 243 243) ] pageView.body ]
     , title = pageView.title
     }

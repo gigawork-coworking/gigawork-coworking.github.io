@@ -8,6 +8,7 @@ export default {
     return `
 <link rel="stylesheet" href="/style.css" />
 <meta name="generator" content="elm-pages v${context.cliVersion}" />
+  <script src="https://api-maps.yandex.ru/v3/?apikey=ab2d2369-9d42-4b81-8406-ff02533f5fcb&lang=ru_RU"></script>
 `;
   },
   preloadTagForFile(file) {
