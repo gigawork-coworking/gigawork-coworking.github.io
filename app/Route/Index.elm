@@ -490,7 +490,7 @@ priceCard cfg =
                 [ el [ centerX, unbounded, Font.size 14, Font.heavy ] (text cfg.price)
                 , el [ centerX, noto, Font.size 14, Font.regular ] (text cfg.subtitle)
                 ]
-        , minWidth = 148
+        , minWidth = 128
         }
 
 
