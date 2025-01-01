@@ -3956,6 +3956,10 @@
     var $dillonkearns$elm_pages$Pages$Url$fromPath = function (path) {
         return $dillonkearns$elm_pages$Pages$Url$Internal($dillonkearns$elm_pages$UrlPath$toAbsolute(path));
     };
+    var $dillonkearns$elm_bcp47_language_tag$LanguageTag$Internal$Language = $elm$core$Basics$identity;
+    var $dillonkearns$elm_bcp47_language_tag$LanguageTag$Language$ru = "ru";
+    var $dillonkearns$elm_bcp47_language_tag$LanguageTag$Internal$Region = $elm$core$Basics$identity;
+    var $dillonkearns$elm_bcp47_language_tag$LanguageTag$Region$ru = "ru";
     var $dillonkearns$elm_pages$Head$Twitter$Regular = 0;
     var $dillonkearns$elm_pages$Head$Twitter$Summary = function (a) {
         return { $: 0, a: a };
@@ -5401,12 +5405,12 @@
             jR: $elm$core$Maybe$Nothing,
             j6: "\u041F\u0440\u0435\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0439 \u043A\u043E\u0432\u043E\u0440\u043A\u0438\u043D\u0433 \u0443 \u0434\u043E\u043C\u0430",
             aR: {
-                jv: "elm-pages logo",
+                jv: "",
                 j7: $elm$core$Maybe$Nothing,
                 kT: $elm$core$Maybe$Nothing,
-                mn: $dillonkearns$elm_pages$Pages$Url$fromPath($dillonkearns$elm_pages$UrlPath$join(_List_fromArray(["images", "icon-png.png"])))
+                mn: $dillonkearns$elm_pages$Pages$Url$fromPath($dillonkearns$elm_pages$UrlPath$join(_List_Nil))
             },
-            kP: $elm$core$Maybe$Nothing,
+            kP: $elm$core$Maybe$Just(_Utils_Tuple2($dillonkearns$elm_bcp47_language_tag$LanguageTag$Language$ru, $dillonkearns$elm_bcp47_language_tag$LanguageTag$Region$ru)),
             lS: "GigaWork",
             mg: "GigaWork"
         }));
@@ -9462,7 +9466,10 @@
                         $author$project$Route$Index$priceCard({ d1: "120 000 \u20BD", d3: "20 000 \u20BD / \u043C\u0435\u0441\u044F\u0446", mg: "6 \u043C\u0435\u0441\u044F\u0446\u0430" })
                     ]))
                 ])),
-                $author$project$Route$Index$callToAction
+                $author$project$Route$Index$callToAction,
+                $author$project$Element$el_fn(_List_fromArray([
+                    $author$project$Element$height($author$project$Element$px(76))
+                ]), $author$project$Element$none)
             ])),
             mg: "GigaWork"
         };
