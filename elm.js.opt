@@ -9101,6 +9101,30 @@
     var $author$project$Internal$Model$unstyled_a0 = $author$project$Internal$Model$Unstyled, $author$project$Internal$Model$unstyled_a1 = $elm$core$Basics$always, $author$project$Internal$Model$unstyled = A2($elm$core$Basics$composeL, $author$project$Internal$Model$unstyled_a0, $author$project$Internal$Model$unstyled_a1);
     var $author$project$Element$html = $author$project$Internal$Model$unstyled;
     var $elm$html$Html$iframe = _VirtualDom_nodeNS_fn(_VirtualDom_node_a0, "iframe"), $elm$html$Html$iframe_fn = $elm$html$Html$iframe.a2;
+    var $elm$html$Html$Attributes$alt_a0 = "alt", $elm$html$Html$Attributes$alt = $elm$html$Html$Attributes$stringProperty($elm$html$Html$Attributes$alt_a0);
+    var $elm$html$Html$Attributes$src = function (url) {
+        return $elm$html$Html$Attributes$stringProperty_fn("src", _VirtualDom_noJavaScriptOrHtmlUri(url));
+    };
+    var $author$project$Element$image_fn = function (attrs, _v0) {
+        var description = _v0.j6;
+        var src = _v0.lW;
+        var imageAttributes = $elm$core$List$filter_fn(function (a) {
+            switch (a.$) {
+                case 7:
+                    return true;
+                case 8:
+                    return true;
+                default:
+                    return false;
+            }
+        }, attrs);
+        return $author$project$Internal$Model$element_fn($author$project$Internal$Model$asEl, $author$project$Internal$Model$div, _List_Cons($author$project$Internal$Model$htmlClass($author$project$Internal$Style$classes.kE), attrs), $author$project$Internal$Model$Unkeyed(_List_fromArray([
+            $author$project$Internal$Model$element_fn($author$project$Internal$Model$asEl, $author$project$Internal$Model$NodeName("img"), _Utils_ap(_List_fromArray([
+                $author$project$Internal$Model$Attr($elm$html$Html$Attributes$src(src)),
+                $author$project$Internal$Model$Attr($elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$alt_a0, description))
+            ]), imageAttributes), $author$project$Internal$Model$Unkeyed(_List_Nil))
+        ])));
+    }, $author$project$Element$image = F2($author$project$Element$image_fn);
     var $author$project$Internal$Model$Max_fn = function (a, b) {
         return { $: 4, a: a, b: b };
     }, $author$project$Internal$Model$Max = F2($author$project$Internal$Model$Max_fn);
@@ -9206,7 +9230,7 @@
                 ]), $author$project$Element$text(cfg.d3))
             ])),
             hS: $author$project$Route$Index$background,
-            eO: 148,
+            eO: 128,
             mg: cfg.mg
         });
     };
@@ -9216,9 +9240,6 @@
         return $author$project$Internal$Model$element_fn($author$project$Internal$Model$asRow, $author$project$Internal$Model$div, _List_Cons($author$project$Internal$Model$htmlClass($author$project$Internal$Style$classes.dB + (" " + $author$project$Internal$Style$classes.bF)), _List_Cons($author$project$Element$width($author$project$Element$shrink), _List_Cons($author$project$Element$height($author$project$Element$shrink), attrs))), $author$project$Internal$Model$Unkeyed(children));
     }, $author$project$Element$row = F2($author$project$Element$row_fn);
     var $author$project$Element$spaceEvenly = $author$project$Internal$Model$Class_fn($author$project$Internal$Flag$spacing, $author$project$Internal$Style$classes.lU);
-    var $elm$html$Html$Attributes$src = function (url) {
-        return $elm$html$Html$Attributes$stringProperty_fn("src", _VirtualDom_noJavaScriptOrHtmlUri(url));
-    };
     var $author$project$Route$Index$subtitle = function (t) {
         return $author$project$Element$paragraph_fn(_List_fromArray([
             $author$project$Element$Font$color($author$project$Route$Index$green),
@@ -9393,44 +9414,6 @@
                 ])),
                 $author$project$Route$Index$callToAction,
                 $author$project$Element$column_fn(_List_fromArray([
-                    $author$project$Element$spacing(24),
-                    $author$project$Element$width($author$project$Element$fill)
-                ]), _List_fromArray([
-                    $author$project$Route$Index$subtitle("\u041F\u0440\u0435\u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0430"),
-                    $author$project$Element$wrappedRow_fn(_List_fromArray([
-                        $author$project$Element$spacing(16),
-                        $author$project$Element$centerX,
-                        $author$project$Element$width($author$project$Element$fill)
-                    ]), _List_fromArray([
-                        $author$project$Route$Index$card({ fZ: "10 \u043C\u0438\u043D\u0443\u0442 \u043E\u0442 \u043C\u0435\u0442\u0440\u043E \u041C\u043E\u043B\u043E\u0434\u0435\u0436\u043D\u0430\u044F.\n\u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u0430\u044F \u043F\u0430\u0440\u043A\u043E\u0432\u043A\u0430.", aR: $author$project$Route$Index$mockImage, mg: "\u0423\u0434\u043E\u0431\u043D\u043E\u0435 \u0440\u0430\u0441\u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0435" }),
-                        $author$project$Route$Index$card({ fZ: "\u041A\u0430\u0436\u0434\u043E\u0435 \u0440\u0430\u0431\u043E\u0447\u0435\u0435 \u043C\u0435\u0441\u0442\u043E \u043E\u0441\u043D\u0430\u0449\u0435\u043D\u043E \u043A\u0440\u0435\u0441\u043B\u043E\u043C Herman Miller.", aR: $author$project$Route$Index$mockImage, mg: "\u042D\u0440\u0433\u043E\u043D\u043E\u043C\u0438\u0447\u043D\u0430\u044F \u043C\u0435\u0431\u0435\u043B\u044C" }),
-                        $author$project$Route$Index$card({ fZ: "\u041A\u0430\u0436\u0434\u0443\u044E \u043D\u0435\u0434\u0435\u043B\u044E \u0437\u0430\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u043C \u0434\u043B\u044F \u0432\u0430\u0441 \u0441\u0432\u0435\u0436\u0435\u043E\u0431\u0436\u0430\u0440\u0435\u043D\u043D\u044B\u0439 \u043A\u043E\u0444\u0435.", aR: $author$project$Route$Index$mockImage, mg: "\u0421\u0432\u0435\u0436\u0438\u0439 \u043A\u043E\u0444\u0435" }),
-                        $author$project$Route$Index$card({ fZ: "\u041A\u0430\u0436\u0434\u043E\u0435 \u0440\u0430\u0431\u043E\u0447\u0435\u0435 \u043C\u0435\u0441\u0442\u043E \u043E\u0441\u043D\u0430\u0449\u0435\u043D\u043E \u0432\u044B\u0445\u043E\u0434\u043E\u043C USB-C \u0441 \u0437\u0430\u0440\u044F\u0434\u043A\u043E\u0439 \u0438 \u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442\u043E\u043C.", aR: $author$project$Route$Index$mockImage, mg: "\u041F\u0440\u043E\u0432\u043E\u0434\u043D\u043E\u0439 \u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442" }),
-                        $author$project$Route$Index$card({ fZ: "\u0414\u043B\u044F \u0432\u0430\u0448\u0435\u0433\u043E \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u0435\u0441\u0442\u044C \u043B\u0430\u0437\u0435\u0440\u043D\u044B\u0439 \u043F\u0440\u0438\u043D\u0442\u0435\u0440.", aR: $author$project$Route$Index$mockImage, mg: "\u041F\u0440\u0438\u043D\u0442\u0435\u0440" }),
-                        $author$project$Route$Index$card({ fZ: "\u041F\u0440\u0435\u0434\u0443\u0441\u043C\u043E\u0442\u0440\u0435\u043D\u0430 \u043B\u0430\u0443\u043D\u0434\u0436-\u0437\u043E\u043D\u0430 \u0434\u043B\u044F \u043E\u0442\u0434\u044B\u0445\u0430.", aR: $author$project$Route$Index$mockImage, mg: "\u041B\u0430\u0443\u043D\u0434\u0436-\u0437\u043E\u043D\u0430" }),
-                        $author$project$Route$Index$card({ fZ: "\u0427\u0442\u043E\u0431\u044B \u043D\u0435 \u043C\u0435\u0448\u0430\u0442\u044C \u0434\u0440\u0443\u0433 \u0434\u0440\u0443\u0433\u0443 \u0432 \u043A\u043E\u0432\u043E\u0440\u043A\u0438\u043D\u0433\u0435 \u0441\u0442\u043E\u044F\u0442 \u043A\u0430\u0431\u0438\u043D\u043A\u0438 \u0434\u043B\u044F \u0437\u0432\u043E\u043D\u043A\u043E\u0432.", aR: $author$project$Route$Index$mockImage, mg: "\u041A\u0430\u0431\u0438\u043D\u043A\u0438 \u0434\u043B\u044F \u0437\u0432\u043E\u043D\u043A\u043E\u0432" }),
-                        $author$project$Route$Index$card({ fZ: "\u0412 \u043A\u043E\u0432\u043E\u0440\u043A\u0438\u043D\u0433\u0435 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D \u043A\u043E\u043D\u0434\u0438\u0446\u0438\u043E\u043D\u0435\u0440 \u0438 \u043E\u0447\u0438\u0441\u0442\u0438\u0442\u0435\u043B\u044C \u0432\u043E\u0437\u0434\u0443\u0445\u0430.", aR: $author$project$Route$Index$mockImage, mg: "\u041A\u043E\u043C\u0444\u043E\u0440\u0442\u043D\u044B\u0435 \u0443\u0441\u043B\u043E\u0432\u0438\u044F" })
-                    ]))
-                ])),
-                $author$project$Element$column_fn(_List_fromArray([
-                    $author$project$Element$spacing(27),
-                    $author$project$Element$width($author$project$Element$fill)
-                ]), _List_fromArray([
-                    $author$project$Route$Index$subtitle("\u0413\u0440\u0430\u0444\u0438\u043A \u0440\u0430\u0431\u043E\u0442\u044B"),
-                    $author$project$Element$row_fn(_List_fromArray([
-                        $author$project$Element$width($author$project$Element$fill),
-                        $author$project$Element$spaceEvenly
-                    ]), _List_fromArray([
-                        $author$project$Route$Index$workDayCard({ cP: "9:00", mg: "\u041F\u043D", dq: "18:00" }),
-                        $author$project$Route$Index$workDayCard({ cP: "9:00", mg: "\u0412\u0442", dq: "18:00" }),
-                        $author$project$Route$Index$workDayCard({ cP: "9:00", mg: "\u0421\u0440", dq: "18:00" }),
-                        $author$project$Route$Index$workDayCard({ cP: "9:00", mg: "\u0427\u0442", dq: "18:00" }),
-                        $author$project$Route$Index$workDayCard({ cP: "9:00", mg: "\u041F\u0442", dq: "18:00" }),
-                        $author$project$Route$Index$weekendDayCard({ mg: "\u0421\u0431" }),
-                        $author$project$Route$Index$weekendDayCard({ mg: "\u0412\u0441" })
-                    ]))
-                ])),
-                $author$project$Element$column_fn(_List_fromArray([
                     $author$project$Element$spacing(27),
                     $author$project$Element$width($author$project$Element$fill)
                 ]), _List_fromArray([
@@ -9450,6 +9433,93 @@
                         $elm$html$Html$Attributes$height(400),
                         $elm$virtual_dom$VirtualDom$attribute_fn("frameborder", "0")
                     ]), _List_Nil)))
+                ])),
+                $author$project$Element$column_fn(_List_fromArray([
+                    $author$project$Element$spacing(24),
+                    $author$project$Element$width($author$project$Element$fill)
+                ]), _List_fromArray([
+                    $author$project$Route$Index$subtitle("\u041F\u0440\u0435\u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0430"),
+                    $author$project$Element$wrappedRow_fn(_List_fromArray([
+                        $author$project$Element$spacing(16),
+                        $author$project$Element$centerX,
+                        $author$project$Element$width($author$project$Element$fill)
+                    ]), _List_fromArray([
+                        $author$project$Route$Index$card({
+                            fZ: "10 \u043C\u0438\u043D\u0443\u0442 \u043E\u0442 \u043C\u0435\u0442\u0440\u043E \u041C\u043E\u043B\u043E\u0434\u0435\u0436\u043D\u0430\u044F.\n\u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u0430\u044F \u043F\u0430\u0440\u043A\u043E\u0432\u043A\u0430.",
+                            aR: $author$project$Element$image_fn(_List_fromArray([
+                                $author$project$Element$width($author$project$Element$fill),
+                                $author$project$Element$height($author$project$Element$fill)
+                            ]), { j6: "\u041A\u0430\u0440\u0442\u0430", lW: "/map.png" }),
+                            mg: "\u0423\u0434\u043E\u0431\u043D\u043E\u0435 \u0440\u0430\u0441\u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0435"
+                        }),
+                        $author$project$Route$Index$card({
+                            fZ: "\u041A\u0430\u0436\u0434\u043E\u0435 \u0440\u0430\u0431\u043E\u0447\u0435\u0435 \u043C\u0435\u0441\u0442\u043E \u043E\u0441\u043D\u0430\u0449\u0435\u043D\u043E \u043A\u0440\u0435\u0441\u043B\u043E\u043C Herman Miller.",
+                            aR: $author$project$Element$image_fn(_List_fromArray([
+                                $author$project$Element$width($author$project$Element$fill),
+                                $author$project$Element$height($author$project$Element$fill)
+                            ]), { j6: "\u041A\u0440\u0435\u0441\u043B\u043E Herman Miller Mirra", lW: "/chair.png" }),
+                            mg: "\u042D\u0440\u0433\u043E\u043D\u043E\u043C\u0438\u0447\u043D\u0430\u044F \u043C\u0435\u0431\u0435\u043B\u044C"
+                        }),
+                        $author$project$Route$Index$card({
+                            fZ: "\u041A\u0430\u0436\u0434\u0443\u044E \u043D\u0435\u0434\u0435\u043B\u044E \u0437\u0430\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u043C \u0434\u043B\u044F \u0432\u0430\u0441 \u0441\u0432\u0435\u0436\u0435\u043E\u0431\u0436\u0430\u0440\u0435\u043D\u043D\u044B\u0439 \u043A\u043E\u0444\u0435.",
+                            aR: $author$project$Element$image_fn(_List_fromArray([
+                                $author$project$Element$width($author$project$Element$fill),
+                                $author$project$Element$height($author$project$Element$fill)
+                            ]), { j6: "\u041A\u043E\u0444\u0435", lW: "/coffee.jpg" }),
+                            mg: "\u0421\u0432\u0435\u0436\u0438\u0439 \u043A\u043E\u0444\u0435"
+                        }),
+                        $author$project$Route$Index$card({
+                            fZ: "\u041A\u0430\u0436\u0434\u043E\u0435 \u0440\u0430\u0431\u043E\u0447\u0435\u0435 \u043C\u0435\u0441\u0442\u043E \u043E\u0441\u043D\u0430\u0449\u0435\u043D\u043E \u0432\u044B\u0445\u043E\u0434\u043E\u043C USB-C \u0441 \u0437\u0430\u0440\u044F\u0434\u043A\u043E\u0439 \u0438 \u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442\u043E\u043C.",
+                            aR: $author$project$Element$image_fn(_List_fromArray([
+                                $author$project$Element$width($author$project$Element$fill),
+                                $author$project$Element$height($author$project$Element$fill)
+                            ]), { j6: "\u041A\u0430\u0431\u0435\u043B\u044C USB-C", lW: "/usb-c.jpg" }),
+                            mg: "\u041F\u0440\u043E\u0432\u043E\u0434\u043D\u043E\u0439 \u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442"
+                        }),
+                        $author$project$Route$Index$card({
+                            fZ: "\u0414\u043B\u044F \u0432\u0430\u0448\u0435\u0433\u043E \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u0435\u0441\u0442\u044C \u043B\u0430\u0437\u0435\u0440\u043D\u044B\u0439 \u043F\u0440\u0438\u043D\u0442\u0435\u0440.",
+                            aR: $author$project$Element$image_fn(_List_fromArray([
+                                $author$project$Element$width($author$project$Element$fill),
+                                $author$project$Element$height($author$project$Element$fill)
+                            ]), { j6: "\u041F\u0440\u0438\u043D\u0442\u0435\u0440", lW: "/printer.jpg" }),
+                            mg: "\u041F\u0440\u0438\u043D\u0442\u0435\u0440"
+                        }),
+                        $author$project$Route$Index$card({
+                            fZ: "\u041F\u0440\u0435\u0434\u0443\u0441\u043C\u043E\u0442\u0440\u0435\u043D\u0430 \u043B\u0430\u0443\u043D\u0434\u0436-\u0437\u043E\u043D\u0430 \u0434\u043B\u044F \u043E\u0442\u0434\u044B\u0445\u0430.",
+                            aR: $author$project$Element$image_fn(_List_fromArray([
+                                $author$project$Element$width($author$project$Element$fill),
+                                $author$project$Element$height($author$project$Element$fill)
+                            ]), { j6: "\u0414\u0438\u0432\u0430\u043D", lW: "/sofa.jpg" }),
+                            mg: "\u041B\u0430\u0443\u043D\u0434\u0436-\u0437\u043E\u043D\u0430"
+                        }),
+                        $author$project$Route$Index$card({ fZ: "\u0427\u0442\u043E\u0431\u044B \u043D\u0435 \u043C\u0435\u0448\u0430\u0442\u044C \u0434\u0440\u0443\u0433 \u0434\u0440\u0443\u0433\u0443 \u0432 \u043A\u043E\u0432\u043E\u0440\u043A\u0438\u043D\u0433\u0435 \u0441\u0442\u043E\u044F\u0442 \u043A\u0430\u0431\u0438\u043D\u043A\u0438 \u0434\u043B\u044F \u0437\u0432\u043E\u043D\u043A\u043E\u0432.", aR: $author$project$Route$Index$mockImage, mg: "\u041A\u0430\u0431\u0438\u043D\u043A\u0438 \u0434\u043B\u044F \u0437\u0432\u043E\u043D\u043A\u043E\u0432" }),
+                        $author$project$Route$Index$card({
+                            fZ: "\u0412 \u043A\u043E\u0432\u043E\u0440\u043A\u0438\u043D\u0433\u0435 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D \u043A\u043E\u043D\u0434\u0438\u0446\u0438\u043E\u043D\u0435\u0440 \u0438 \u043E\u0447\u0438\u0441\u0442\u0438\u0442\u0435\u043B\u044C \u0432\u043E\u0437\u0434\u0443\u0445\u0430.",
+                            aR: $author$project$Element$image_fn(_List_fromArray([
+                                $author$project$Element$width($author$project$Element$fill),
+                                $author$project$Element$height($author$project$Element$fill)
+                            ]), { j6: "\u0412\u043E\u0437\u0434\u0443\u0445", lW: "/air.jpg" }),
+                            mg: "\u041A\u043E\u043C\u0444\u043E\u0440\u0442\u043D\u044B\u0435 \u0443\u0441\u043B\u043E\u0432\u0438\u044F"
+                        })
+                    ]))
+                ])),
+                $author$project$Element$column_fn(_List_fromArray([
+                    $author$project$Element$spacing(27),
+                    $author$project$Element$width($author$project$Element$fill)
+                ]), _List_fromArray([
+                    $author$project$Route$Index$subtitle("\u0413\u0440\u0430\u0444\u0438\u043A \u0440\u0430\u0431\u043E\u0442\u044B"),
+                    $author$project$Element$row_fn(_List_fromArray([
+                        $author$project$Element$width($author$project$Element$fill),
+                        $author$project$Element$spaceEvenly
+                    ]), _List_fromArray([
+                        $author$project$Route$Index$workDayCard({ cP: "9:00", mg: "\u041F\u043D", dq: "18:00" }),
+                        $author$project$Route$Index$workDayCard({ cP: "9:00", mg: "\u0412\u0442", dq: "18:00" }),
+                        $author$project$Route$Index$workDayCard({ cP: "9:00", mg: "\u0421\u0440", dq: "18:00" }),
+                        $author$project$Route$Index$workDayCard({ cP: "9:00", mg: "\u0427\u0442", dq: "18:00" }),
+                        $author$project$Route$Index$workDayCard({ cP: "9:00", mg: "\u041F\u0442", dq: "18:00" }),
+                        $author$project$Route$Index$weekendDayCard({ mg: "\u0421\u0431" }),
+                        $author$project$Route$Index$weekendDayCard({ mg: "\u0412\u0441" })
+                    ]))
                 ])),
                 $author$project$Element$column_fn(_List_fromArray([
                     $author$project$Element$spacing(27),
