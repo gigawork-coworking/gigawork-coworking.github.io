@@ -175,6 +175,7 @@ view app shared =
                     ]
                 ]
             , callToAction
+            , el [ height (px 76) ] none
             ]
     }
 
