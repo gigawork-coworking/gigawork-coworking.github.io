@@ -6,6 +6,7 @@ import Element exposing (..)
 import Element.Background as Background
 import FatalError exposing (FatalError)
 import Html exposing (Html)
+import Html.Attributes as Attributes
 import Pages.Flags
 import Pages.PageUrl exposing (PageUrl)
 import Route exposing (Route)
@@ -93,6 +94,17 @@ view :
     -> View msg
     -> { body : List (Html msg), title : String }
 view sharedData page model toMsg pageView =
-    { body = [ layout [ Background.color (rgb255 243 243 243) ] pageView.body ]
+    { body =
+        [ Html.div []
+            [ Html.img
+                [ Attributes.src "https://mc.yandex.ru/watch/99382050"
+                , Attributes.style "position" "absolute"
+                , Attributes.style "left" "-9999px;"
+                , Attributes.alt ""
+                ]
+                []
+            ]
+        , layout [ Background.color (rgb255 243 243 243) ] pageView.body
+        ]
     , title = pageView.title
     }
