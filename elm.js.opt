@@ -12950,6 +12950,7 @@
             return _Utils_Tuple2(_Utils_update(model, { dk: !model.dk }), $author$project$Effect$none);
         }
     }, $author$project$Shared$update = F2($author$project$Shared$update_fn);
+    var $elm$html$Html$img = _VirtualDom_nodeNS_fn(_VirtualDom_node_a0, "img"), $elm$html$Html$img_fn = $elm$html$Html$img.a2;
     var $author$project$Internal$Model$OnlyDynamic_fn = function (a, b) {
         return { $: 2, a: a, b: b };
     }, $author$project$Internal$Model$OnlyDynamic = F2($author$project$Internal$Model$OnlyDynamic_fn);
@@ -13094,6 +13095,14 @@
     var $author$project$Shared$view_fn = function (sharedData, page, model, toMsg, pageView) {
         return {
             fZ: _List_fromArray([
+                $elm$html$Html$div_fn(_List_Nil, _List_fromArray([
+                    $elm$html$Html$img_fn(_List_fromArray([
+                        $elm$html$Html$Attributes$src("https://mc.yandex.ru/watch/99382050"),
+                        _VirtualDom_style_fn("position", "absolute"),
+                        _VirtualDom_style_fn("left", "-9999px;"),
+                        $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$alt_a0, "")
+                    ]), _List_Nil)
+                ])),
                 $author$project$Element$layoutWith_fn($author$project$Element$layout_a0, _List_fromArray([
                     $author$project$Element$Background$color($author$project$Element$rgb255_fn(243, 243, 243))
                 ]), pageView.fZ)
