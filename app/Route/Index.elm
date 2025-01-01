@@ -98,6 +98,18 @@ view app shared =
                     (text "Премиальный коворкинг у дома")
                 ]
             , callToAction
+            , column [ spacing 27, width fill ]
+                [ subtitle "Адрес"
+                , paragraph [ noto, Font.size 18, Font.extraBold ] [ text "Москва, Рублевское шоссе, 22" ]
+                , el [ width fill, height (px 400) ] <|
+                    html <|
+                        Html.iframe
+                            [ Html.src "https://yandex.ru/map-widget/v1/?um=constructor%3A6021061543ae5cffca6803ac7a0fa84e727d918c403c59250d18022f582f81d0&amp;source=constructor"
+                            , Html.height 400
+                            , Html.attribute "frameborder" "0"
+                            ]
+                            []
+                ]
             , column [ spacing 24, width fill ]
                 [ subtitle "Преимущества"
                 , wrappedRow [ spacing 16, centerX, width fill ]
@@ -154,18 +166,6 @@ view app shared =
                     , weekendDayCard { title = "Сб" }
                     , weekendDayCard { title = "Вс" }
                     ]
-                ]
-            , column [ spacing 27, width fill ]
-                [ subtitle "Адрес"
-                , paragraph [ noto, Font.size 18, Font.extraBold ] [ text "Москва, Рублевское шоссе, 22" ]
-                , el [ width fill, height (px 400) ] <|
-                    html <|
-                        Html.iframe
-                            [ Html.src "https://yandex.ru/map-widget/v1/?um=constructor%3A6021061543ae5cffca6803ac7a0fa84e727d918c403c59250d18022f582f81d0&amp;source=constructor"
-                            , Html.height 400
-                            , Html.attribute "frameborder" "0"
-                            ]
-                            []
                 ]
             , column [ spacing 27, width fill ]
                 [ subtitle "Цена"
