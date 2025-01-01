@@ -10,6 +10,8 @@ import Head
 import Head.Seo as Seo
 import Html
 import Html.Attributes as Html
+import LanguageTag.Language
+import LanguageTag.Region
 import Pages.Url
 import PagesMsg exposing (PagesMsg)
 import Route
@@ -64,13 +66,13 @@ head app =
         { canonicalUrlOverride = Nothing
         , siteName = "GigaWork"
         , image =
-            { url = [ "images", "icon-png.png" ] |> UrlPath.join |> Pages.Url.fromPath
-            , alt = "elm-pages logo"
+            { url = [] |> UrlPath.join |> Pages.Url.fromPath
+            , alt = ""
             , dimensions = Nothing
             , mimeType = Nothing
             }
         , description = "Преимальный коворкинг у дома"
-        , locale = Nothing
+        , locale = Just ( LanguageTag.Language.ru, LanguageTag.Region.ru )
         , title = "GigaWork"
         }
         |> Seo.website
