@@ -104,32 +104,32 @@ view app shared =
                     [ card
                         { title = "Удобное расположение"
                         , body = "10 минут от метро Молодежная.\nБесплатная парковка."
-                        , image = mockImage
+                        , image = image [ width fill, height fill ] { src = "/map.png", description = "Карта" }
                         }
                     , card
                         { title = "Эргономичная мебель"
                         , body = "Каждое рабочее место оснащено креслом Herman Miller."
-                        , image = mockImage
+                        , image = image [ width fill, height fill ] { src = "/chair.png", description = "Кресло Herman Miller Mirra" }
                         }
                     , card
                         { title = "Свежий кофе"
                         , body = "Каждую неделю заказываем для вас свежеобжаренный кофе."
-                        , image = mockImage
+                        , image = image [ width fill, height fill ] { src = "/coffee.jpg", description = "Кофе" }
                         }
                     , card
                         { title = "Проводной интернет"
                         , body = "Каждое рабочее место оснащено выходом USB-C с зарядкой и интернетом."
-                        , image = mockImage
+                        , image = image [ width fill, height fill ] { src = "/usb-c.jpg", description = "Кабель USB-C" }
                         }
                     , card
                         { title = "Принтер"
                         , body = "Для вашего пользования есть лазерный принтер."
-                        , image = mockImage
+                        , image = image [ width fill, height fill ] { src = "/printer.jpg", description = "Принтер" }
                         }
                     , card
                         { title = "Лаундж-зона"
                         , body = "Предусмотрена лаундж-зона для отдыха."
-                        , image = mockImage
+                        , image = image [ width fill, height fill ] { src = "/sofa.jpg", description = "Диван" }
                         }
                     , card
                         { title = "Кабинки для звонков"
@@ -139,7 +139,7 @@ view app shared =
                     , card
                         { title = "Комфортные условия"
                         , body = "В коворкинге установлен кондиционер и очиститель воздуха."
-                        , image = mockImage
+                        , image = image [ width fill, height fill ] { src = "/air.jpg", description = "Воздух" }
                         }
                     ]
                 ]
